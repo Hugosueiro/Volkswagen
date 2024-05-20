@@ -192,3 +192,6 @@ footer p{
         justify-content: space-around;
     }
 }
+@media only screen and (max-width: 768px) {
+    
+}
