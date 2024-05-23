@@ -1,0 +1,243 @@
+$color_negro: #0D0D0D;
+$color_azul: blue;
+$color_blanco: white;
+$font-family_1: "Dosis", sans-serif;
+$font-family_2: "Poppins", sans-serif;
+$background-marron: #555050;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html {
+    font-size: 62.5%;
+    }
+    body {
+        overflow-x: hidden;
+        header{
+            background-color: #555050;
+            padding: 3rem;
+            header nav{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                align-content: space-around;
+                }
+            header ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                }       
+            .logovww{
+                width: 3rem;
+                height: 3rem;
+                margin-left: 2rem;
+                }
+            ul li{
+                list-style-type: none;
+                color: #0D0D0D;
+                font-size: 1.5rem;
+                font-family: "Dosis", sans-serif;
+                font-optical-sizing: auto;
+                font-style: normal;
+                padding: 0.5rem 1rem; 
+                text-align: center;
+            ul li a{
+            color: #0D0D0D;
+            }
+        }
+    }
+}
+h1 {
+	color: $color_negro;
+	font-family: $font-family_2;
+	font-weight: 500;
+	font-style: normal;
+	text-align: center;
+}
+p {
+	color: $color_negro;
+	font-size: 1.2rem;
+	font-family: $font-family_1;
+	font-optical-sizing: auto;
+	font-style: normal;
+	text-align: justify;
+}
+a {
+	list-style-type: none;
+	color: $color_negro;
+	font-size: 1.5rem;
+	font-family: $font-family_1;
+	font-optical-sizing: auto;
+	font-style: normal;
+}
+footer {
+	background-color:#555050;
+	padding: 1rem;
+	nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+	p {
+		color: $color_negro;
+		font-size: 1.6rem;
+		font-family: $font-family_1;
+		font-weight: 500;
+		font-style: normal;
+		text-align: right;
+	}
+}
+svg {
+	height: 2rem;
+	width: 2.5rem;
+	color: $color_blanco;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	list-style: none;
+}
+.nosotros {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	img {
+		img {
+			width: 70%;
+		}
+	}
+}
+.img-nosotros {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	padding: 1.5rem;
+}
+.text-nosotros {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	padding: 1.5rem;
+	order: -1;
+}
+input {
+	display: block;
+	margin-bottom: 0.5rem;
+}
+select {
+	display: block;
+	margin-bottom: 0.5rem;
+}
+textarea {
+	height: 6rem;
+}
+.btn-submit {
+	height: 2rem;
+	width: 4rem;
+	border-radius: 3%;
+	background-color:$color_negro
+}
+#sobrenosotros {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	.mapa {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 50%;
+		padding: 1.5rem;
+		.mapa {
+			width: 80%;
+		}
+	}
+	.text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		padding: 1.5rem;
+		order: -1;
+	}
+}
+
+.text {
+	padding: 1.5rem;
+}
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+	.text-mobile {
+		width: 100%;
+	}
+	.img-mobile {
+		width: 100%;
+	}
+	.nosotros-mobile {
+		flex-direction: column;
+	}
+	.nav-mobile {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: nowrap;
+	}
+	.nav-ul-mobile {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-around;
+	}
+	.footer-mobile{
+		background-color: #555050;
+		padding: 15%;
+		width: 100%;
+	}
+	.informacion-contacto{
+		width: 100%;
+		padding: 1.0rem;
+	}
+	.imagenes-carrusel{
+		width: 100%;
+	}
+}
+.neumaticos1{
+    width: 30%;
+    height: 50%;
+}
+.subtituloh2{
+	display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		padding: 1.5rem;
+}
+.subtituloh3{
+	flex-direction: column;
+	width: 100%;
+	padding: 1.5rem;
+}
+.aceite1{
+	width: 30%;
+    height: 50%;
+}
+.mantenimientos1{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 30%;
+	height: 50%;
+}
+
