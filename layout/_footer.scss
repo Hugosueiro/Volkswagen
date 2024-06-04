@@ -1,0 +1,81 @@
+@import './colors';
+$redes: (
+	facebook: #2956a3,
+	tiktok: #0076b8,
+	instagram: #ce1312
+);
+footer{
+    width: 100%;
+    padding-bottom: 1px;
+    background-color: #555050;
+    background-size: cover;
+    .container_footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: auto;
+        .box__footer{
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            justify-content: space-around;
+            h2{
+                margin-bottom: 30px;
+                color: black;
+                font-weight: 700;
+            }
+            a{
+                text-decoration:none;
+                margin-top: 10px;
+                color: black;
+                font-weight: 600;
+                &:hover{
+                    opacity: 0.8;
+                    color: rgba(209, 209, 209, 0.863);
+                }
+                .fab{
+                    font-size: 20px;
+                }
+            }
+            .facebook{
+                text-decoration:none;
+                &:hover{
+                    color: map-get($redes, facebook);
+                }
+            }
+            .tiktok{
+                text-decoration:none;
+                &:hover{
+                    color: map-get($redes, tiktok);
+                }
+            }
+            .Instagram{
+                text-decoration:none;
+                &:hover{
+                    color: map-get($redes, instagram);
+                }
+            }
+        }
+    }
+    .box__copyright{
+        max-width: 1200px;
+        text-align: center;
+        margin: auto;
+        p{
+            margin-top:-11px;
+            color: black;
+        }
+        hr{
+            border: none;
+            height: 1px;
+            background-color: black;
+        }
+        b{
+            color:rgb(31, 29, 29);
+            &:hover{
+                color: black;
+            }
+        }
+    }
+    
+}

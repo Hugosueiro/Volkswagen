@@ -1,10 +1,6 @@
-$color_negro: #0D0D0D;
-$color_azul: blue;
-$color_blanco: white;
-$font-family_1: "Dosis", sans-serif;
-$font-family_2: "Poppins", sans-serif;
-$background-marron: #555050;
-
+/*layout*/
+@import '../layout/footer';//esto es el footer
+@import '../layout/colors'; // estos son los colores
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
     *{
         margin: 0;
@@ -75,23 +71,6 @@ a {
 	font-family: $font-family_1;
 	font-optical-sizing: auto;
 	font-style: normal;
-}
-footer {
-	background-color:#555050;
-	padding: 1rem;
-	nav {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-	}
-	p {
-		color: $color_negro;
-		font-size: 1.6rem;
-		font-family: $font-family_1;
-		font-weight: 500;
-		font-style: normal;
-		text-align: right;
-	}
 }
 svg {
 	height: 2rem;
@@ -171,10 +150,10 @@ textarea {
 		order: -1;
 	}
 }
-
 .text {
 	padding: 1.5rem;
 }
+// aca empieza el mobile
 @media only screen and (min-width: 375px) and (max-width: 667px) {
 	.text-mobile {
 		width: 100%;
@@ -210,6 +189,7 @@ textarea {
 	.imagenes-carrusel{
 		width: 100%;
 	}
+    // aca termina el mobile
 }
 .neumaticos1{
     width: 30%;
@@ -240,4 +220,165 @@ textarea {
 	width: 30%;
 	height: 50%;
 }
+//aca empieza error 404/
+svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -400px;
+    #Polygon-1,
+    #Polygon-2,
+    #Polygon-3,
+    #Polygon-4,
+    #Polygon-4,
+    #Polygon-5 {
+        animation: float 1s infinite ease-in-out alternate;
+    }
+    #Polygon-2 {
+        animation-delay: 0.2s;
+    }
+    #Polygon-3 {
+        animation-delay: 0.4s;
+    }
+    #Polygon-4 {
+        animation-delay: 0.6s;
+    }
+    #Polygon-5 {
+        animation-delay: 0.8s;
+    }
+}
+.message-box {
+    height: 200px;
+    width: 380px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: 50px;
+    color: #fff;
+    font-family: Roboto;
+    font-weight: 300;
+    h1 {
+        font-size: 60px;
+        line-height: 46px;
+        margin-bottom: 40px;
+        color: #229954bb;
+    }
+}
+.buttons-con .action-link-wrap {
+    margin-top: 40px;
+    a {
+        background: #229954bb;
+        padding: 8px 25px;
+        border-radius: 4px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 14px;
+        transition: all 0.3s linear;
+        cursor: pointer;
+        text-decoration: none;
+        margin-right: 10px;
+        &:hover{
+            background: #031301;
+            color: #fff;
+        }
+    }
+}
+@media (max-width: 450px) {
+    svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -250px;
+        margin-left: -190px;
+    }
+    .message-box {
+        top: 50%;
+        left: 50%;
+        margin-top: -100px;
+        margin-left: -190px;
+        text-align: center;
+    }
+}
+.trabajos{
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    justify-content: space-around;
+    color: rgb(7, 7, 6);
+    .columna_trabajo{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        h4{
+            color: rgb(0, 0, 0)
+        }
+    }
+}/* Aca empieza trabajos html mobile */
+.trabajos{
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    justify-content: space-around;
+    color: rgb(0, 0, 0);
+}  
+/* Aca termina trabajos html mobile */
+// aca empieza responsive trabajos
+@media only screen and (max-width: 767px) {
+    .nav-mobile {
+        flex-direction: column;
+        align-items: flex-start;
 
+        .nav-ul-mobile {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    .trabajos {
+        grid-template-columns: 1fr;
+    }
+
+    .nosotros, .img-nosotros, .text-nosotros {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .trabajos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -250px;
+        margin-left: -190px;
+    }
+
+    .message-box {
+        top: 50%;
+        left: 50%;
+        margin-top: -100px;
+        margin-left: -190px;
+        text-align: center;
+    }
+}
+/* Aca empieza contactos html */
+h1{
+    color   : white;
+}
+.display-4{
+    color: black;
+}
+.jumbotron{
+    background-color: #25302abb;
+}
