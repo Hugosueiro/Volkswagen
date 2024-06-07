@@ -82,9 +82,12 @@ svg {
 	list-style: none;
 }
 .nosotros {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-end;
 	img {
 		img {
 			width: 70%;
@@ -153,6 +156,12 @@ textarea {
 .text {
 	padding: 1.5rem;
 }
+.inicio{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
 // aca empieza el mobile
 @media only screen and (min-width: 375px) and (max-width: 667px) {
 	.text-mobile {
@@ -189,6 +198,9 @@ textarea {
 	.imagenes-carrusel{
 		width: 100%;
 	}
+    .inicio-mobile{
+        flex-direction: column;
+    }
     // aca termina el mobile
 }
 .neumaticos1{
@@ -196,6 +208,7 @@ textarea {
     height: 50%;
 }
 .subtituloh2{
+    font-size: xx-large;
 	display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -285,6 +298,20 @@ svg {
         }
     }
 }
+.contenedor_mapa{
+    width: 50%;
+}
+.contenedor_video{
+    width: 50%;
+}
+.video1s{
+    height: 500px;
+    width: 100%;
+}
+.mapa{
+    height: 500px;
+    width: 100%;
+}
 @media (max-width: 450px) {
     svg {
         position: absolute;
@@ -299,6 +326,20 @@ svg {
         margin-top: -100px;
         margin-left: -190px;
         text-align: center;
+    }
+    .video1s-mobile{
+        height: 350px;
+        width: 100%;
+    }
+    .mapa-mobile{
+        height: 350px;
+        width: 100%;
+    }
+    .contenedor_mapa-mobile{
+        width: 100%;
+    }
+    .contenedor_video-mobile{
+        width: 100%;
     }
 }
 .trabajos{
@@ -382,3 +423,4 @@ h1{
 .jumbotron{
     background-color: #25302abb;
 }
+// aca termina//
