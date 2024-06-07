@@ -135,7 +135,7 @@ h1 {
 
 p {
   color: #0D0D0D;
-  font-size: 1.2rem;
+  font-size: initial;
   font-family: "Dosis", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
